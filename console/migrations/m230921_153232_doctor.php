@@ -20,7 +20,7 @@ class m230921_153232_doctor extends Migration
         `author_id` => $this -> integer(),
         `alias` => $this -> string(200),
         `data` => $this -> date("Y-m-d"),
-        // `hits` => $this -> integer(),
+         `hits` => $this -> integer(),
 
         ]);
 
