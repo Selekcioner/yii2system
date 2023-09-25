@@ -14,13 +14,13 @@ class m230921_153353_clinic extends Migration
     {
         $this ->createTable (`doctor`, [
 
-            `id` => $this => primaryKey(),
-        `title` => $this => string(200),
-        `text` => $this => string(),
-        `author_id` => $this => integer(),
-        `alias` => $this => string(200),
-        `data` => $this => date("Y-m-d"),
-        `hits` => $this => integer(),
+            `id`=> $this -> primaryKey(),
+        `title`=> $this -> string(200),
+        `text`=> $this -> string(),
+        `author_id`=> $this -> integer(),
+        `alias`=> $this -> string(200),
+        `data`=> $this -> date("Y-m-d"),
+        `hits`=> $this -> integer(),
 
         ]);
     }
