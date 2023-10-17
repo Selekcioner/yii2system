@@ -14,11 +14,10 @@ class m230928_082528_create_doctor_table extends Migration
     {
         $this->createTable('{{%doctor}}', [
             'id' => $this->primaryKey(),
-            'title' => $this->string(100),
-            'text' => $this->text(),
-            'doctor_id' => $this->integer(),
-            'alias' => $this->string(200),
+            'name' => $this->string(32),
+
         ]);
+        $this->addColumn('doctor', 'id', $this->smallInteger(8).'NOT NULL AUTO_INCREMENT');
     }
 
     /**
